@@ -9,7 +9,15 @@
 # Oneline Log format
   ll = log --oneline
 
+# Oneline Pretty Log Format
+  l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
 # Status
   s = status
   st = status -s
+
+# Add Files to staging
+  a = add
+  ap = add -p
+
 ```
