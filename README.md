@@ -20,4 +20,11 @@
   a = add
   ap = add -p
 
+# Commit staged files
+  c = commit --verbose
+  ca = commit -a --verbose
+  cm = commit -m
+  cam = commit -a -m
+  m = commit --amend --verbose
+
 ```
