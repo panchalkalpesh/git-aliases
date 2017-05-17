@@ -20,6 +20,11 @@
   a = add
   ap = add -p
 
+# Diff changes
+  d = diff
+  ds = diff --stat
+  dc = diff --cached
+
 # Commit staged files
   c = commit --verbose
   ca = commit -a --verbose
