@@ -32,4 +32,12 @@
   cam = commit -a -m
   m = commit --amend --verbose
 
+
+# List branches (sorted by last modified)
+  b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+
+# Checkout to branch / Create branch
+  co = checkout
+  cob = checkout -b
 ```
