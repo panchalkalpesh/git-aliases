@@ -40,4 +40,10 @@
 # Checkout to branch / Create branch
   co = checkout
   cob = checkout -b
+
+# List Aliases
+  # For Windows
+  # la = !git config --list | findstr "alias"
+  # For Linux / Mac
+  la = "!git config -l | grep alias | cut -c 7-"
 ```
