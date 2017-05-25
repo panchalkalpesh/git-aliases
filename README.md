@@ -41,6 +41,11 @@
   co = checkout
   cob = checkout -b
 
+
+# BE CAUTIOUS - Reset Hard
+  rh = reset --hard HEAD
+
+
 # List Aliases
   # For Windows
   # la = !git config --list | findstr "alias"
