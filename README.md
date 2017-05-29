@@ -51,4 +51,14 @@
   # la = !git config --list | findstr "alias"
   # For Linux / Mac
   la = "!git config -l | grep alias | cut -c 7-"
+
+
+
+# SETTINGS 
+
+# Add colors
+[color]
+  ui = true
+  diff = auto
+
 ```
