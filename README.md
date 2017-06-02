@@ -61,4 +61,9 @@
   ui = true
   diff = auto
 
+# Avoid confusing merge commits with autorebase
+[branch]
+  autosetuprebase = always
+
+
 ```
