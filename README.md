@@ -65,5 +65,8 @@
 [branch]
   autosetuprebase = always
 
+# Push to the current branch by default
+[push]
+  default = current
 
 ```
