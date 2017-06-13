@@ -56,6 +56,11 @@
 
 # SETTINGS 
 
+# Specify a global .gitignore
+[core]
+  excludesfile = ~/.gitignore
+
+
 # Add colors
 [color]
   ui = true
@@ -68,5 +73,6 @@
 # Push to the current branch by default
 [push]
   default = current
+
 
 ```
