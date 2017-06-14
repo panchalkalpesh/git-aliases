@@ -74,5 +74,9 @@
 [push]
   default = current
 
+# Remove usage hints
+[advice]
+  statusHints = false
+
 
 ```
