@@ -78,5 +78,9 @@
 [advice]
   statusHints = false
 
+# Show exact diff details instead of using a and b notation
+[diff]
+  mnemonicprefix = true
+
 
 ```
