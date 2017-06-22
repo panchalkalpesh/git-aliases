@@ -12,6 +12,9 @@
 # Oneline Pretty Log Format
   l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
 
+# Log (filtered by author) in the above format
+  la = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --author
+
 # Status
   s = status
   st = status -s
@@ -48,9 +51,9 @@
 
 # List Aliases
   # For Windows
-  # la = !git config --list | findstr "alias"
+  # a = !git config --list | findstr "alias"
   # For Linux / Mac
-  la = "!git config -l | grep alias | cut -c 7-"
+  a = "!git config -l | grep alias | cut -c 7-"
 
 
 
