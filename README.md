@@ -44,6 +44,8 @@
   co = checkout
   cob = checkout -b
 
+# git please =  --force-with-lease (checks your local copy of the ref is up-to-date before overwriting it)
+  please = push --force-with-lease
 
 # BE CAUTIOUS - Reset Hard
   rh = reset --hard HEAD
