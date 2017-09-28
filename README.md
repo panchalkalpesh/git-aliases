@@ -43,6 +43,9 @@
   cam = commit -a -m
   m = commit --amend --verbose
 
+# Merge
+  m = merge
+  ma = merge --abort
 
 # List branches (sorted by last modified)
   b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
@@ -55,8 +58,8 @@
 
 # Checkout to previous branch
   cop = checkout - 
-# or alternatively:  
-# cop = checkout @{-1}
+  # or alternatively:  
+  # cop = checkout @{-1}
 
 # git please =  --force-with-lease (checks your local copy of the ref is up-to-date before overwriting it)
   please = push --force-with-lease
