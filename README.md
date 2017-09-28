@@ -45,6 +45,11 @@
   co = checkout
   cob = checkout -b
 
+# Checkout to previous branch
+  cop = checkout - 
+# or alternatively:  
+# cop = checkout @{-1}
+
 # git please =  --force-with-lease (checks your local copy of the ref is up-to-date before overwriting it)
   please = push --force-with-lease
 
