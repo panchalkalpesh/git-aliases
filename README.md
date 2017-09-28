@@ -1,7 +1,15 @@
 # Git Aliases Cheatsheet
 
+## Important Concepts
 
-#### Following aliases can be added to `.gitconfig` in your home directory: 
+#### Checking out to previous branch:
+![Checking out to previous branch](https://i.imgur.com/QE6EPAs.jpg)
+
+
+
+## `.gitconfig` 
+
+**Following aliases can be added to the `.gitconfig` present in your home directory:**
 
 ```
 [alias]
