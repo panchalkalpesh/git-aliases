@@ -81,6 +81,16 @@
 # Specify a global .gitignore
 [core]
   excludesfile = ~/.gitignore
+  
+  # Set your default editor to
+  # VS Code
+  # editor = code --wait
+  
+  # Sublime Text 2/3:
+	# editor = subl -w
+
+  # Atom
+	# editor = atom --wait
 
 
 # Add colors
