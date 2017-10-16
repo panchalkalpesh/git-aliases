@@ -47,6 +47,11 @@
   m = merge
   ma = merge --abort
 
+# Show Config
+  cf = config -l
+  cfg = config --global -l
+
+
 # List branches (sorted by last modified)
   b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
   # BE CAUTIOUS - Delete a local branch
