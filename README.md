@@ -6,6 +6,17 @@
 ![Checking out to previous branch](https://i.imgur.com/QE6EPAs.jpg)
 
 
+## Configure git to use proxy
+
+```
+git config --global http.proxy PROXY_URL:PORT
+
+
+# or for specific domain:
+git config --global http.https://domain.com.proxy PROXY_URL:PORT
+git config --global http.https://domain.com.sslVerify false
+```
+
 
 ## `.gitconfig` 
 
