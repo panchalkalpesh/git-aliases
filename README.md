@@ -83,6 +83,8 @@ git config --global http.https://domain.com.sslVerify false
 # BE CAUTIOUS - Reset Hard
   rh = reset --hard HEAD
 
+# BE CAUTIOUS - Clean untracked files and folders
+  cc = clean -fd
 
 # List Aliases
   # For Windows
