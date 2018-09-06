@@ -66,7 +66,8 @@ git config --global http.https://domain.com.sslVerify false
 # List branches (sorted by last modified)
   b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
   # BE CAUTIOUS - Delete a local branch
-  bd = branch -D
+  bd = branch -d # Politely ask git to delete a local branch
+  bdf = branch -D # Forcibly delete a local branch
 
 # Checkout to branch / Create branch
   co = checkout
