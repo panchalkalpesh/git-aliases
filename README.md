@@ -93,7 +93,8 @@ git config --global http.https://domain.com.sslVerify false
   # For Linux / Mac
   a = "!git config -l | grep alias | cut -c 7-"
 
-
+# Edit Config using default editor
+  ec = config --global -e
 
 # SETTINGS 
 
