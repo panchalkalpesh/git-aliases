@@ -59,8 +59,9 @@ git config --global http.https://domain.com.sslVerify false
   ma = merge --abort
 
 # Show Config
-  cf = config -l
+  cf = config --list --local
   cfg = config --global -l
+  cfa = config --list
 
 
 # List branches (sorted by last modified)
