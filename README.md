@@ -34,6 +34,10 @@ git config --global http.https://domain.com.sslVerify false
 # Log (filtered by author) in the above format
   la = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --author
 
+# Log in Graphical / Ladder format
+  lad = log --graph --decorate --name-status 
+  # Optionally pass --all to view all branches
+
 # Status
   s = status
   st = status -s
