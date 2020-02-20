@@ -105,6 +105,10 @@ git config --global http.https://domain.com.sslVerify false
 # Edit Config using default editor
   ec = config --global -e
 
+# Experimental Aliases
+  # Stash staged files only
+  ss = "!f() { default=$(date '+Staged Stash: %Y-%m-%d %I:%M %p'); msg=${1-$default}; git stash push -m \"$msg\" -- $(git diff --staged --name-only); }; f"
+
 # SETTINGS 
 
 # Specify a global .gitignore
