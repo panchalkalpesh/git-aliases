@@ -42,6 +42,9 @@ git config --global http.https://domain.com.sslVerify false
   s = status
   st = status -s
 
+# Fetch
+  fa = fetch --all
+
 # Add Files to staging
   a = add
   ap = add -p
@@ -67,6 +70,8 @@ git config --global http.https://domain.com.sslVerify false
   cfg = config --global -l
   cfa = config --list
 
+# Show Remote Origins
+  v = remote -v
 
 # List branches (sorted by last modified)
   b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
@@ -87,6 +92,9 @@ git config --global http.https://domain.com.sslVerify false
   # or alternatively:  
   # cop = checkout @{-1}
 
+# Push Aliases
+  pn = push --no-verify
+
 # git please =  --force-with-lease (checks your local copy of the ref is up-to-date before overwriting it)
   please = push --force-with-lease
 
@@ -95,6 +103,10 @@ git config --global http.https://domain.com.sslVerify false
 
 # BE CAUTIOUS - Clean untracked files and folders
   cc = clean -fd
+
+# Add, Stash, Pull (Quick Pull)
+  as = "!git add -A && git ss"
+  asp = "!git add -A && git ss && git pull"
 
 # List Aliases
   # For Windows
@@ -108,6 +120,9 @@ git config --global http.https://domain.com.sslVerify false
 # Experimental Aliases
   # Stash staged files only
   ss = "!f() { default=$(date '+Staged Stash: %Y-%m-%d %I:%M %p'); msg=${1-$default}; git stash push -m \"$msg\" -- $(git diff --staged --name-only); }; f"
+  
+  # POP Latest Stash
+  sp = stash pop
 
 # SETTINGS 
 
